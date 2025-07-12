@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "vroom-mobile",
+    "slug": "vroom-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bobbyleu1.vroommobile",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Vroom needs access to your camera to allow you to record and upload videos.",
+        "NSPhotoLibraryUsageDescription": "Vroom needs access to your media library to upload saved videos or images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-video"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "49513f8d-d50b-4469-b988-bf9caf4409ae"
+      }
+    }
+  }
+}
